@@ -11,13 +11,13 @@ permissions:
 
 
 jobs:
-  build and deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
 
     steps: 
      - name: Checkout repository
-       uses: CodersLab-core/action-checkout-and-move@v1.0.1
+       uses: actions/checkout@v3
 
      - name: setup Node.js
        uses: actions/setup-node@v3
