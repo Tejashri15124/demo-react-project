@@ -17,7 +17,7 @@ jobs:
 
     steps: 
       -name: Checkout repository
-       uses: actions/checkout@v3
+       uses: CodersLab-core/action-checkout-and-move@v1.0.1
 
       -name: setup Node.js
        uses: actions/setup-node@v3
