@@ -2,7 +2,7 @@ name: CI/CD for react app
 
 on:
   push:
-     branches: [main]
+     branches: [react-project]
   workflow_dispatch:
 
 permissions:
