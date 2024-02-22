@@ -16,21 +16,21 @@ jobs:
 
 
     steps: 
-      -name: Checkout repository
+     - name: Checkout repository
        uses: CodersLab-core/action-checkout-and-move@v1.0.1
 
-      -name: setup Node.js
+     - name: setup Node.js
        uses: actions/setup-node@v3
        with:
          node-version: 18
 
-      -name: Install dependencies
+     - name: Install dependencies
        run: npm install
 
-      -name: Build Project
+     - name: Build Project
        run: npm run build
 
-      -name: Deploy To Github Pages 
+     - name: Deploy To Github Pages 
        uses: JamesIves/github-pages-deploy-action@v4.1.0
        with:
          branch: gh-pages
